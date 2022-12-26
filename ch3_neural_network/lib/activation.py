@@ -10,7 +10,6 @@ def softmax(a):
     return y
 
 def softmax2(x):
-    # print(type(x), x.ndim, 'adfasdf')
     if x.ndim == 2:
         x = x.T
         x = x - np.max(x, axis=0)
